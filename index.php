@@ -39,7 +39,7 @@
       </ul>
     </div>
     <div class="nav-wrapper hide-on-large-only">
-        <a href="index.php" class="brand-logo">健身房预约</a>
+        <a href="index.php" class="brand-logo">活动报名系统</a>
       <ul class="left">
         <li><a href="#"><img id="user" class="circle" src="assets/img/user.png"></a></li>
       </ul>
@@ -53,8 +53,24 @@
    <!-- 可以考虑移植健身房预约的公告系统 待添加 -->
    <!-- 公告结束 -->
       
-      
-   
+      <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">超轻粘土手工大赛</span>
+              <p>这是美工组的某个活动blablabla</p>
+            </div>
+            <div class="card-action">
+              <a href="activities/wanniba/index.php">我要报名!</a>
+            </div>
+          </div>
+     <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">"易起写"轻应用设计大赛</span>
+              <p>技术组设计大赛blabla</p>
+            </div>
+            <div class="card-action">
+              <a href="#">我要报名(加群链接)</a>
+            </div>
+          </div>
     </div>
   <br />
   <br />
