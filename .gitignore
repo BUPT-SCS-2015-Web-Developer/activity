@@ -1,2 +1,4 @@
 assets/API/db_config.php
+assets/API/db_configs.php
 assets/API/classes/db_configs.php
+assets/API/classes/db_config.php

@@ -48,11 +48,11 @@
     </header>
   <main>
     <div class="container">
-    
+
    <!-- 公告开始 -->
    <!-- 可以考虑移植健身房预约的公告系统 待添加 -->
    <!-- 公告结束 -->
-      
+
       <div class="card blue-grey darken-1">
             <div class="card-content white-text">
               <span class="card-title">超轻粘土手工大赛</span>
@@ -61,7 +61,7 @@
             <div class="card-action">
               <!-- <a href="activities/wanniba/index.php">活动详情</a> -->
               <!-- <a href="activities/wanniba/apply.php">我要报名!</a> -->
-              <a href="activities/wanniba/submit.php">作品提交</a>
+              <a href="activity/wanniba/submit.php">作品提交</a>
             </div>
           </div>
      <!--
