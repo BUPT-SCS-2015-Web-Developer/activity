@@ -14,8 +14,8 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <title>活动报名系统 - 北邮易班</title>
-    <link href="assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <title>超轻粘土手工大赛 - 活动报名系统 - 北邮易班</title>
+    <link href="../assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="assets/css/index.css" type="text/css" rel="stylesheet" />
     <style media="screen">
     body {
@@ -33,13 +33,13 @@
     <header>
       <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container hide-on-med-and-down">
-        <a href="#" class="brand-logo">活动报名系统</a>
+        <a href="#" class="brand-logo">超轻粘土手工大赛</a>
       <ul class="right">
         <li><a href="my.php">个人中心</a></li>
       </ul>
     </div>
     <div class="nav-wrapper hide-on-large-only">
-        <a href="index.php" class="brand-logo">活动报名系统</a>
+        <a href="index.php" class="brand-logo">超轻粘土手工大赛</a>
       <ul class="left">
         <li><a href="#"><img id="user" class="circle" src="assets/img/user.png"></a></li>
       </ul>
@@ -53,17 +53,9 @@
    <!-- 可以考虑移植健身房预约的公告系统 待添加 -->
    <!-- 公告结束 -->
       
-      <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">超轻粘土手工大赛</span>
-              <p>这是美工组的某个活动blablabla</p>
-            </div>
-            <div class="card-action">
-              <!-- <a href="activities/wanniba/index.php">活动详情</a> -->
-              <!-- <a href="activities/wanniba/apply.php">我要报名!</a> -->
-              <a href="activities/wanniba/submit.php">作品提交</a>
-            </div>
-          </div>
+   <h2>超轻粘土手工大赛</h2>
+        
+   <p>活动介绍活动图片啥的blablabla</p>
      <!--
      <div class="card blue-grey darken-1">
             <div class="card-content white-text">
