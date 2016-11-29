@@ -41,9 +41,10 @@
     <div class="nav-wrapper hide-on-large-only">
         <a href="index.php" class="brand-logo">超轻粘土手工大赛</a>
       <ul class="left">
-        <li><a href="#"><img id="user" class="circle" src="assets/img/user.png"></a></li>
+        <li><a href="#"><img id="user" class="circle" src="../assets/img/user.png"></a></li>
       </ul>
     </div>
+    
   </nav>
     </header>
   <main>
