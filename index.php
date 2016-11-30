@@ -33,7 +33,7 @@
     <header>
       <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container hide-on-med-and-down">
-        <a href="#" class="brand-logo">活动报名系统</a>
+        <a href="index.php" class="brand-logo">活动报名系统</a>
       <ul class="right">
         <li><a href="my.php">个人中心</a></li>
       </ul>
@@ -55,8 +55,10 @@
 
       <div class="card blue-grey darken-1">
             <div class="card-content white-text">
-              <span class="card-title">超轻粘土手工大赛</span>
-              <p>这是美工组的某个活动blablabla</p>
+              <span class="card-title">超轻黏土手工大赛</span>
+              <p>北邮易班发展中心美工组主办的活动~</p>
+              <br>
+              <img src="activity/wanniba/assets/img/qrcode.png">
             </div>
             <div class="card-action">
               <!-- <a href="activities/wanniba/index.php">活动详情</a> -->
@@ -85,7 +87,7 @@
     <div class="row">
      <div class="col l6 s12">
       <h5 class="white-text">北邮易班活动报名系统</h5>
-      <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+      <p class="grey-text text-lighten-4">本系统致力于为北邮部署在易班平台上的活动提供查看活动详情、提交报名、提交作品等功能。</p>
      </div>
      <div class="col l4 offset-l2 s12">
       <h5 class="white-text">Links</h5>

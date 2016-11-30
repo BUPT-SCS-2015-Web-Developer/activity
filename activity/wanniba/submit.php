@@ -14,7 +14,7 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <title>超轻粘土手工大赛 - 活动报名系统 - 北邮易班</title>
+  <title>超轻黏土手工大赛 - 活动报名系统 - 北邮易班</title>
   <link href="../../assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="../../assets/css/index.css" type="text/css" rel="stylesheet" />
   <style media="screen">
@@ -33,13 +33,13 @@
   <header>
    <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container hide-on-med-and-down">
-     <a href="#" class="brand-logo">超轻粘土手工大赛</a>
+     <a href="index_for_all.php" class="brand-logo">超轻黏土手工大赛</a>
      <ul class="right">
       <li><a href="my.php">个人中心</a></li>
      </ul>
     </div>
     <div class="nav-wrapper hide-on-large-only">
-     <a href="index.php" class="brand-logo">超轻粘土手工大赛</a>
+     <a href="index_for_all.php" class="brand-logo">超轻黏土手工大赛</a>
      <ul class="left">
       <li><a href="#"><img id="user" class="circle" src="../../assets/img/user.png" /></a></li>
      </ul>
@@ -52,16 +52,17 @@
     <!-- 可以考虑移植健身房预约的公告系统 待添加 -->
     <!-- 公告结束 -->
     <h3>超轻粘土手工大赛 - 作品提交</h3>
-    <hr />
+    <hr /><br><br>
      <div class="input-field">
-      <input id="teamName" type="text" length="20" />
-      <label for="teamName">组名</label>
+      <input id="teamName" type="text" length="20" required/>
+      <label for="teamName">组号</label>
      </div>
      <div class="input-field">
       <textarea id="description" class="materialize-textarea" length="500"></textarea>
       <label for="description">作品介绍</label>
      </div>
      <div class="input-field">
+      <small>注:请将报名表和黏土作品拍在一起提交</small><br>
       <a class="waves-effect waves-light btn" id="selector">选取图片</a>&nbsp;
       <a class="waves-effect waves-light btn" id="up">上传</a>
       <input type="text" readonly="readonly" value="" id="filepath" />
@@ -79,7 +80,7 @@
     <div class="row">
      <div class="col l6 s12">
       <h5 class="white-text">北邮易班活动报名系统</h5>
-      <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+      <p class="grey-text text-lighten-4">本系统致力于为北邮部署在易班平台上的活动提供查看活动详情、提交报名、提交作品等功能。</p>
      </div>
      <div class="col l4 offset-l2 s12">
       <h5 class="white-text">Links</h5>
@@ -148,7 +149,11 @@ $(function() {
   });
 
   $("#submit").click(function() {
-
+    if ($("#teamName").val() == "") {
+        Materialize.toast("请填写组号!", 5000);
+        $("#teamName").focus();
+        return;
+    }
     //前端验证
     if (window.uploadOK) {
       var order_data = {};

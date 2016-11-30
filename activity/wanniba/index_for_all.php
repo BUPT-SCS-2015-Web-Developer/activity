@@ -14,9 +14,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <title>超轻粘土手工大赛 - 活动报名系统 - 北邮易班</title>
-    <link href="../assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="assets/css/index.css" type="text/css" rel="stylesheet" />
+    <title>超轻黏土手工大赛 - 活动报名系统 - 北邮易班</title>
+    <link href="../../assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../../assets/css/index.css" type="text/css" rel="stylesheet" />
     <style media="screen">
     body {
         display: flex;
@@ -33,13 +33,13 @@
     <header>
       <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container hide-on-med-and-down">
-        <a href="#" class="brand-logo">超轻粘土手工大赛</a>
+        <a href="index_for_all.php" class="brand-logo">超轻黏土手工大赛</a>
       <ul class="right">
         <li><a href="my.php">个人中心</a></li>
       </ul>
     </div>
     <div class="nav-wrapper hide-on-large-only">
-        <a href="index.php" class="brand-logo">超轻粘土手工大赛</a>
+        <a href="index_for_all.php" class="brand-logo">超轻黏土手工大赛</a>
       <ul class="left">
         <li><a href="#"><img id="user" class="circle" src="../assets/img/user.png"></a></li>
       </ul>
@@ -54,9 +54,11 @@
    <!-- 可以考虑移植健身房预约的公告系统 待添加 -->
    <!-- 公告结束 -->
       
-   <h2>超轻粘土手工大赛</h2>
+   <h2>超轻黏土手工大赛</h2>
         
-   <p>活动介绍活动图片啥的blablabla</p>
+   <p>"易手邮影"超轻黏土手工大赛为易班文化月主题活动。<a href="submit.php">点我</a>或扫描下方二维码即可提交作品~</p>
+    <p>注:使用易班客户端"扫一扫"功能扫码可免登录。</p>
+    <img src="assets/img/qrcode.png">
      <!--
      <div class="card blue-grey darken-1">
             <div class="card-content white-text">
@@ -78,7 +80,7 @@
     <div class="row">
      <div class="col l6 s12">
       <h5 class="white-text">北邮易班活动报名系统</h5>
-      <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+      <p class="grey-text text-lighten-4">本系统致力于为北邮部署在易班平台上的活动提供查看活动详情、提交报名、提交作品等功能。</p>
      </div>
      <div class="col l4 offset-l2 s12">
       <h5 class="white-text">Links</h5>
@@ -101,7 +103,6 @@
   </footer>
   <!--  Scripts-->
   <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="assets/js/materialize.js"></script>
-  <script src="assets/js/index.js"></script>
+  <script src="../../assets/js/materialize.js"></script>
  </body>
 </html>
