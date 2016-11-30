@@ -161,10 +161,11 @@ $(function() {
         if (status == "success") {
           if (data == "1") Materialize.toast("提交成功!将在3秒后返回主页", 3000, '',
           function() {
-            window.location.href = "../index.php";
+            window.location.href = "../../index.php";
           });
           else if (data == "2") Materialize.toast("非法请求!", 5000);
           else if (data == "3") Materialize.toast("参数错误!请勿作死!", 5000);
+          else if (data == "6") Materialize.toast("请先上传图片!", 5000);
           else Materialize.toast("服务器异常，请稍后再试!", 5000);
         } else Materialize.toast("服务器异常，请稍后再试!", 5000);
       });
