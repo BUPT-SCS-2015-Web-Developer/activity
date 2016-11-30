@@ -1,13 +1,9 @@
 <?php
-/*
-
     session_start();
     include "assets/API/header_api_session.php";
     include "assets/API/iapp.php";
     include "assets/API/config.php";
     include "assets/API/db_config.php";
-
-    */
 ?>
 <!DOCTYPE html>
 <html lang="en">

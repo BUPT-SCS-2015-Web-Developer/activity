@@ -1,16 +1,14 @@
 <?php
 	$cfg = array(
 		'x' => array(
-			'appID'		=> 'fc3690f0f9f0552f',
-			'appSecret'	=> 'f7faaaab68150992bb287a4188c3c5b7',
-			'callback'	=> 'http://f.yiban.cn/iapp65401'		// վ��Ӧ�������� callback �ǹ��������￴���ġ�վ�ڵ�ַ��
+			'appID'		=> '439067f927a8d696',
+			'appSecret'	=> '3542b73545ee29464d92dc2288eb0032',
+			'callback'	=> 'http://f.yiban.cn/iapp86269'		// վ��Ӧ�������� callback �ǹ��������￴���ġ�վ�ڵ�ַ��
 		),
 		'm' => array(
-			'appID'		=> 'fc3690f0f9f0552f',
-			'appSecret'	=> 'f7faaaab68150992bb287a4188c3c5b7',
-			'callback'	=> 'http://f.yiban.cn/iapp65401'
+			'appID'		=> '439067f927a8d696',
+			'appSecret'	=> '3542b73545ee29464d92dc2288eb0032',
+			'callback'	=> 'http://f.yiban.cn/iapp86269'
 		)
 	);
-	$showingDay = 5; //可以提前预定/列表显示的天数
-	$peopleLimit = 45; //每个时间段人数上限
 ?>
