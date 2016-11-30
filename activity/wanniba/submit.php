@@ -1,4 +1,6 @@
 <?php
+ini_set("display_errors", "On");
+error_reporting(E_ALL | E_STRICT);
     session_start();
     include "../../assets/API/header_api_session.php";
     include "../../assets/API/iapp.php";

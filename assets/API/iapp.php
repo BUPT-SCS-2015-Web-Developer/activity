@@ -41,32 +41,6 @@
 			$_SESSION['token']	= $info['visit_oauth']['access_token'];
 			$_SESSION['yibanID']	= $info['visit_user']['userid'];
 			$_SESSION['yibanName']	= $info['visit_user']['username'];
-
-			$api = YBOpenApi::getInstance()->bind($_SESSION['token']);
-			$user = $api->getUser();
-			$info = $user->realme();
-			$_SESSION['name'] = $info['info']['yb_realname'];
-			$_SESSION['schoolID'] = $info['info']['yb_studentid'];
-			$_SESSION['userType'] = $info['info']['yb_identity'];
-			if($_SESSION['userType'] != "辅导员")
-			{
-					include "db_config.php";
-			    $db = new mysqli($db_host,$db_user,$db_password,$db_database);
-			  	if (!$db)
-			  	{
-			  		exit('Could not connect: ' . mysql_error());
-			  	}
-			  	$db->query("set names 'utf8'");
-			    $sql_query = "SELECT * FROM `gym_admin` WHERE `schoolID` = ".$_SESSION['schoolID'];
-			    $result = $db->query($sql_query);
-			    if ($result->num_rows == 0)
-			  	{
-			      ;
-			  	}
-				else {
-					$_SESSION['userType'] = "辅导员";
-				}
-			}
 		}
 		catch (YBException $ex)
 		{
@@ -77,28 +51,6 @@
 		$api = YBOpenApi::getInstance()->bind($_SESSION['token']);
 		$user = $api->getUser();
 		$info = $user->realme();
-		$_SESSION['name'] = $info['info']['yb_realname'];
-		$_SESSION['schoolID'] = $info['info']['yb_studentid'];
-		$_SESSION['userType'] = $info['info']['yb_identity'];
-		if($_SESSION['userType'] !== "辅导员")
-		{
-			include "db_config.php";
-			$db = new mysqli($db_host,$db_user,$db_password,$db_database);
-			if (!$db)
-			{
-				exit('Could not connect: ' . mysql_error());
-			}
-			$db->query("set names 'utf8'");
-			$sql_query = "SELECT * FROM `gym_admin` WHERE `schoolID` = ".$_SESSION['schoolID'];
-			$result = $db->query($sql_query);
-			if ($result->num_rows == 0)
-			{
-			  ;
-			}
-			else {
-				$_SESSION['userType'] = "辅导员";
-			}
-		}
 	}
 	/**
 	 * adaptive()生成页面自适合代码，是否需要调用由开发者自行决定

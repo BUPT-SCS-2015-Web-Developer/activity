@@ -17,7 +17,7 @@
   date_default_timezone_set('Asia/Shanghai');
   $upload_time = date("Ymd");
 
-  $yibanID = 1;//$_SESSION['yibanID'];
+  $yibanID = $_SESSION['yibanID'];
   $description = addslashes($_POST['description']);
   $team_name = addslashes($_POST['teamName']);
   $pic_src = addslashes($_POST['imgName']);
