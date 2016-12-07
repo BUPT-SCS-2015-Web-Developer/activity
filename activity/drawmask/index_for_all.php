@@ -1,20 +1,22 @@
 <?php
-ini_set("display_errors", "On");
-error_reporting(E_ALL | E_STRICT);
+/*
+
     session_start();
-//    include "assets/API/header_api_session.php";
-//    include "assets/API/iapp.php";
+    include "assets/API/header_api_session.php";
+    include "assets/API/iapp.php";
     include "assets/API/config.php";
     include "assets/API/db_config.php";
+
+    */
 ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <title>活动报名系统 - 北邮易班</title>
-    <link href="assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="assets/css/index.css" type="text/css" rel="stylesheet" />
+    <title>青春"罩"寒冬 - 活动报名系统 - 北邮易班</title>
+    <link href="../../assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../../assets/css/index.css" type="text/css" rel="stylesheet" />
     <style media="screen">
     body {
         display: flex;
@@ -31,38 +33,33 @@ error_reporting(E_ALL | E_STRICT);
     <header>
       <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container hide-on-med-and-down">
-        <a href="index.php" class="brand-logo">活动报名系统</a>
+        <a href="index_for_all.php" class="brand-logo">青春"罩"寒冬口罩绘制活动</a>
       <ul class="right">
         <li><a href="my.php">个人中心</a></li>
       </ul>
     </div>
     <div class="nav-wrapper hide-on-large-only">
-        <a href="index.php" class="brand-logo">活动报名系统</a>
+        <a href="index_for_all.php" class="brand-logo">青春"罩"寒冬口罩绘制活动</a>
       <ul class="left">
-        <li><a href="#"><img id="user" class="circle" src="assets/img/user.png"></a></li>
+        <li><a href="#"><img id="user" class="circle" src="../assets/img/user.png"></a></li>
       </ul>
     </div>
+    
   </nav>
     </header>
   <main>
     <div class="container">
-
+    
    <!-- 公告开始 -->
    <!-- 可以考虑移植健身房预约的公告系统 待添加 -->
    <!-- 公告结束 -->
-      <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">青春"罩"寒冬口罩绘制活动</span>
-              <p>北邮易班发展中心美工组主办的活动~</p>
-              <br>
-              <img src="activity/drawmask/assets/img/qrcode.png">
-            </div>
-            <div class="card-action">
-              <a href="activity/drawmask/index_for_all.php">活动详情</a>
-              <!-- <a href="activities/wanniba/apply.php">我要报名!</a> -->
-              <a href="activity/drawmask/submit.php">作品提交</a>
-            </div>
-          </div>
+      
+   <h2>青春"罩"寒冬口罩绘制活动</h2>
+        
+   <p>青春"罩"寒冬口罩绘制活动为易班文化月主题活动。<a href="submit.php">点我</a>或扫描下方二维码即可提交作品~</p>
+    <img src="assets/img/qrcode.png">
+    <p>活动介绍:</p>
+    <img src="assets/img/poster.jpg">
      <!--
      <div class="card blue-grey darken-1">
             <div class="card-content white-text">
@@ -107,7 +104,6 @@ error_reporting(E_ALL | E_STRICT);
   </footer>
   <!--  Scripts-->
   <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="assets/js/materialize.js"></script>
-  <script src="assets/js/index.js"></script>
+  <script src="../../assets/js/materialize.js"></script>
  </body>
 </html>

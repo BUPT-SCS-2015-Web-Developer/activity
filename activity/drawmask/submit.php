@@ -12,7 +12,7 @@ error_reporting(E_ALL | E_STRICT);
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <title>超轻黏土手工大赛 - 活动报名系统 - 北邮易班</title>
+  <title>青春"罩"寒冬 - 活动报名系统 - 北邮易班</title>
   <link href="../../assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="../../assets/css/index.css" type="text/css" rel="stylesheet" />
   <style media="screen">
@@ -35,13 +35,13 @@ error_reporting(E_ALL | E_STRICT);
   <header>
    <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container hide-on-med-and-down">
-     <a href="index_for_all.php" class="brand-logo">超轻黏土手工大赛</a>
+     <a href="index_for_all.php" class="brand-logo">青春"罩"寒冬口罩绘制活动</a>
      <ul class="right">
       <li><a href="my.php">个人中心</a></li>
      </ul>
     </div>
     <div class="nav-wrapper hide-on-large-only">
-     <a href="index_for_all.php" class="brand-logo">超轻黏土手工大赛</a>
+     <a href="index_for_all.php" class="brand-logo">青春"罩"寒冬口罩绘制活动</a>
      <ul class="left">
       <li><a href="#"><img id="user" class="circle" src="../../assets/img/user.png" /></a></li>
      </ul>
@@ -53,7 +53,7 @@ error_reporting(E_ALL | E_STRICT);
     <!-- 公告开始 -->
     <!-- 可以考虑移植健身房预约的公告系统 待添加 -->
     <!-- 公告结束 -->
-    <h3>超轻粘土手工大赛 - 作品提交</h3>
+    <h3>青春"罩"寒冬口罩绘制活动 - 作品提交</h3>
     <hr /><br><br>
      <div class="input-field">
       <input class="a1" placeholder="组号" id="teamName" type="text" length="20" required/>
@@ -62,7 +62,7 @@ error_reporting(E_ALL | E_STRICT);
       <textarea class="a1" placeholder="作品介绍" class="browser-default" id="description" class="materialize-textarea" length="500"></textarea>
      </div>
      <div class="input-field">
-      <small>注:请将报名表和黏土作品拍在一起提交</small><br>
+      <small>注:请将报名表和口罩作品拍在一起提交</small><br>
       <a class="waves-effect waves-light btn" id="selector">选取图片</a>&nbsp;
       <a class="waves-effect waves-light btn" id="up">上传</a>
       <input type="text" readonly="readonly" value="" id="filepath" />
