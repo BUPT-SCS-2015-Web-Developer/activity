@@ -25,7 +25,7 @@ error_reporting(E_ALL | E_STRICT);
     main {
         flex: 1 0 auto;
     }
-      
+
       .a1{
           border: 1px solid #9e9e9e!important;
       }
@@ -56,19 +56,20 @@ error_reporting(E_ALL | E_STRICT);
     <h3>青春"罩"寒冬口罩绘制活动 - 作品提交</h3>
     <hr /><br><br>
      <div class="input-field">
-      <input class="a1" placeholder="组号" id="teamName" type="text" length="20" required/>
+      <input class="a1" placeholder="组号" id="teamName" type="text" length="20" required />
      </div>
      <div class="input-field">
       <textarea class="a1" placeholder="作品介绍" class="browser-default" id="description" class="materialize-textarea" length="500"></textarea>
      </div>
      <div class="input-field">
-      <small>注:请将报名表和口罩作品拍在一起提交</small><br>
+      <small>注:请将报名表和口罩作品拍在一起提交</small><br />
       <a class="waves-effect waves-light btn" id="selector">选取图片</a>&nbsp;
       <a class="waves-effect waves-light btn" id="up">上传</a>
       <input type="text" readonly="readonly" value="" id="filepath" />
+
       <p id="state"></p>
      </div>
-     <input type="hidden" id="imgName" /> <!--图片地址 -->
+     <input type="hidden" id="imgName" /> <!--图片地址 hidden-->
      <button class="btn waves-effect waves-light" id="submit">提交作品</button>
    </div>
    <br />
@@ -100,12 +101,12 @@ error_reporting(E_ALL | E_STRICT);
    </div>
   </footer>
   <!--  Scripts-->
-  <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
   <script src="assets/js/ajaxupload.js"></script>
   <script src="../../assets/js/materialize.js"></script>
   <script type="text/javascript">
 $(function() {
-  window.uploadOK = false;
+  //window.uploadOK = false;
   // 创建一个上传参数
   var uploadOption = {
     // 提交目标
@@ -128,9 +129,11 @@ $(function() {
     },
     // 上传完成之后
     onComplete: function(file, response) {
+        response = response.replace(/<\/?[^>]*>/g, "");
       if (response != "no files") {
         $("#state").text("上传完成！");
         window.uploadOK = true;
+        //alert(response);
         $("#imgName").val(response);
       } else {
         $("#state").text(response);

@@ -15,7 +15,7 @@
   }
 
   date_default_timezone_set('Asia/Shanghai');
-  $upload_time = date("Ymd");
+  $upload_time = date("Y-m-d H:i:s");
 
   if(isset($_SESSION['yibanID']))
     $yibanID = $_SESSION['yibanID'];
@@ -23,7 +23,7 @@
     $yibanID = "test";
   $description = addslashes($_POST['description']);
   $team_name = addslashes($_POST['teamName']);
-  $pic_src = addslashes($_POST['imgName']);
+  $pic_src = addslashes($_POST['imgName']);//$_SESSION['pic_src'];
 
   include "../../assets/API/config.php";
   include "../../assets/API/db_config.php";
