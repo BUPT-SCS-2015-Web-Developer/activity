@@ -1,14 +1,13 @@
 <?php
-/*
-
+    ini_set("display_errors", "On");
+    error_reporting(E_ALL | E_STRICT);
     session_start();
-    include "assets/API/header_api_session.php";
-    include "assets/API/iapp.php";
-    include "assets/API/config.php";
-    include "assets/API/db_config.php";
-
-    */
+//    include "../../assets/API/header_api_session.php";
+//    include "../../assets/API/iapp.php";
+    include "../../assets/API/config.php";
+    include "../../assets/API/db_config.php";
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -44,18 +43,18 @@
         <li><a href="#"><img id="user" class="circle" src="../assets/img/user.png"></a></li>
       </ul>
     </div>
-    
+
   </nav>
     </header>
   <main>
     <div class="container">
-    
+
    <!-- 公告开始 -->
    <!-- 可以考虑移植健身房预约的公告系统 待添加 -->
    <!-- 公告结束 -->
-      
+
    <h2>超轻黏土手工大赛</h2>
-        
+
    <p>"易手邮影"超轻黏土手工大赛为易班文化月主题活动。<a href="submit.php">点我</a>或扫描下方二维码即可提交作品~</p>
     <p>注:使用易班客户端"扫一扫"功能扫码可免登录。</p>
     <img src="assets/img/qrcode.png">

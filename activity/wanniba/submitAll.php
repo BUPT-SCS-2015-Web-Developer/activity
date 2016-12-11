@@ -1,7 +1,10 @@
 <?php
     ini_set("display_errors", "On");
     error_reporting(E_ALL | E_STRICT);
-  session_start();
+    session_start();
+    include "../../assets/API/config.php";
+    include "../../assets/API/db_config.php";
+
 
   if(!(isset($_POST['description'])&&isset($_POST['teamName'])))
   {
@@ -24,9 +27,6 @@
   $description = addslashes($_POST['description']);
   $team_name = addslashes($_POST['teamName']);
   $pic_src = addslashes($_POST['imgName']);
-
-  include "../../assets/API/config.php";
-  include "../../assets/API/db_config.php";
 
   $db = new mysqli($db_host,$db_user,$db_password,$db_database);
   if (!$db)
