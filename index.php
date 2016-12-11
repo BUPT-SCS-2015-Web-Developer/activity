@@ -52,7 +52,21 @@ error_reporting(E_ALL | E_STRICT);
    <!-- 公告结束 -->
       <div class="card blue-grey darken-1">
             <div class="card-content white-text">
-              <span class="card-title">沙河|青春"罩"寒冬口罩绘制活动</span>
+              <span class="card-title">纸片人环"邮"校园创意大赛</span>
+              <p>北邮易班发展中心视觉设计部主办.</p>
+              <p>扫码即可提交作品.</p>
+              <br>
+              <img src="activity/paperman/assets/img/qrcode.png">
+            </div>
+            <div class="card-action">
+              <a href="activity/paperman/index_for_all.php">活动详情</a>
+              <!-- <a href="activities/wanniba/apply.php">我要报名!</a> -->
+              <a href="activity/paperman/submit.php">作品提交</a>
+            </div>
+          </div>
+      <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">青春"罩"寒冬口罩绘制活动</span>
               <p>北邮易班发展中心美工组主办的活动~</p>
               <br>
               <img src="activity/drawmask/assets/img/qrcode.png">
@@ -123,5 +137,7 @@ error_reporting(E_ALL | E_STRICT);
   <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="assets/js/materialize.js"></script>
   <script src="assets/js/index.js"></script>
+  <script>
+      </script>
  </body>
 </html>
