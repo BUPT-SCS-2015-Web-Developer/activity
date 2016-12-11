@@ -1,6 +1,6 @@
 <?php
-ini_set("display_errors", "On");
-error_reporting(E_ALL | E_STRICT);
+    ini_set("display_errors", "On");
+    error_reporting(E_ALL | E_STRICT);
     session_start();
 //    include "../../assets/API/header_api_session.php";
 //    include "../../assets/API/iapp.php";
@@ -25,7 +25,7 @@ error_reporting(E_ALL | E_STRICT);
     main {
         flex: 1 0 auto;
     }
-      
+
       .a1{
           border: 1px solid #9e9e9e!important;
       }
@@ -128,6 +128,7 @@ $(function() {
     },
     // 上传完成之后
     onComplete: function(file, response) {
+        response = response.replace(/<\/?[^>]*>/g, "");
       if (response != "no files") {
         $("#state").text("上传完成！");
         window.uploadOK = true;

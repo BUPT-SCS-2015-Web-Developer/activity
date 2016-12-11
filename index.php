@@ -52,7 +52,7 @@ error_reporting(E_ALL | E_STRICT);
    <!-- 公告结束 -->
       <div class="card blue-grey darken-1">
             <div class="card-content white-text">
-              <span class="card-title">青春"罩"寒冬口罩绘制活动</span>
+              <span class="card-title">沙河|青春"罩"寒冬口罩绘制活动</span>
               <p>北邮易班发展中心美工组主办的活动~</p>
               <br>
               <img src="activity/drawmask/assets/img/qrcode.png">
@@ -61,6 +61,20 @@ error_reporting(E_ALL | E_STRICT);
               <a href="activity/drawmask/index_for_all.php">活动详情</a>
               <!-- <a href="activities/wanniba/apply.php">我要报名!</a> -->
               <a href="activity/drawmask/submit.php">作品提交</a>
+            </div>
+          </div>
+
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">宏福|超轻黏土手工大赛</span>
+              <p>北邮易班发展中心美工组主办的活动~</p>
+              <br>
+              <img src="activity/wanniba/assets/img/qrcode.png">
+            </div>
+            <div class="card-action">
+              <!-- <a href="activities/wanniba/index.php">活动详情</a> -->
+              <!-- <a href="activities/wanniba/apply.php">我要报名!</a> -->
+              <a href="activity/wanniba/submit.php">作品提交</a>
             </div>
           </div>
      <!--
