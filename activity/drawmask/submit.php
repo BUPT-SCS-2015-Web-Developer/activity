@@ -111,7 +111,7 @@ $(function() {
   // 创建一个上传参数
   var uploadOption = {
     // 提交目标
-    action: "uploadimage.php",
+    action: "uploadImage.php",
     // 服务端接收的名称
     name: "file",
     // 自动提交
