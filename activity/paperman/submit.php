@@ -100,7 +100,7 @@ error_reporting(E_ALL | E_STRICT);
    </div>
   </footer>
   <!--  Scripts-->
-  <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
   <script src="assets/js/ajaxupload.js"></script>
   <script src="../../assets/js/materialize.js"></script>
   <script type="text/javascript">
