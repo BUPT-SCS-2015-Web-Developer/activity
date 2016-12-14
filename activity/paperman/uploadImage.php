@@ -7,7 +7,7 @@
 	if(count($_FILES) > 0)
 	{
 		$f = $_FILES['file'];
-	    $filename = date("Y-m-d_H-i-s") .'_'. $f['name'];
+	    $filename = date("m-d_H-i-s") .'_'. $f['name'];
 		$filenameFinal = 'upload/' . $filename;
 		move_uploaded_file($f['tmp_name'], $filenameFinal);
 		echo $filename;
